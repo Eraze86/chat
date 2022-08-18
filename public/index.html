@@ -1,0 +1,30 @@
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <script src="../socket.io/socket.io.js" defer></script>
+  <script src="../javascripts/index.js" defer></script>
+</head>
+<body>
+  <Header><h1>Välkommen till chatten, välj ett rum och ett användarnamn:</h1></Header>
+  <main>
+<input id="username" placeholder="Namn!"/>
+
+<button id="name" onclick="SaveName()">Spara</button>
+<br/><br/>
+    <Button onclick="Game()" id="gaming">Spel</Button>
+    <Button onclick="Garden()" id="odling">Odling</Button>
+  
+  <section id="textarea">
+
+  <ul id="chat"></ul>
+  </section>
+  <section id="text">
+  <form id="form">
+    <input id="input"/>
+    <button>Skicka</button>
+  </form>
+  <button onclick="EndChat()">Avsluta chatten</button>
+  </section>
+</main>
+</body>
+
